@@ -1,0 +1,28 @@
+Source,/Users/bazhenov/Desktop/7x3/PCB/PCB.sch
+Kicad Rev,Eeschema 4.0.6
+Generated Date,Friday, March 31, 2017 'PMt' 09:22:35 PM
+
+Title,Проект 7x3
+Company,Баженов Д. К.
+Revision,1
+Date Issue,2017-03-27
+
+Reference,Value,Title,Library,Library Ref
+U10,ATMEGA328-PU,atmel,ATMEGA328-PU
+J2,BARREL_JACK,conn,BARREL_JACK
+U3,7805,regul,7805
+J4,CONN_02X04,Valueasd,conn,CONN_02X03
+JPWR1,CONN_PWR,Valueasd,conn,CONN_01X03
+JPWR2,CONN_PWR,Valueasd,conn,CONN_01X03
+JPWR3,CONN_PWR,Valueasd,conn,CONN_01X03
+U1,TLC5940NT,texas,TLC5940NT
+L2,KYX-23101BS,kyx-23101bs,KYX-23101BS
+L1,KYX-23101BS,kyx-23101bs,KYX-23101BS
+U2,TLC5940NT,texas,TLC5940NT
+L4,KYX-23101BS,kyx-23101bs,KYX-23101BS
+L3,KYX-23101BS,kyx-23101bs,KYX-23101BS
+R1,2k,device,R
+R2,2k,device,R
+J_OUT1,CONN_02X04,Valueasd,conn,CONN_02X03
+J3,CONN_PWR,Valueasd,conn,CONN_01X03
+J_IN1,CONN_02X04,Valueasd,conn,CONN_02X03
