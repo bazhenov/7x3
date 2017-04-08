@@ -1,4 +1,4 @@
-#include "tlc/Tlc5940.h"
+#include "Tlc5940.h"
 
 void setup() {
   Tlc.init(0);
@@ -10,7 +10,6 @@ void setup() {
    library folder.  After editing tlc_config.h for your setup, delete the
    Tlc5940.o file to save the changes. */
 
-int value = 0;
 int direction = 1;
 
 char DIGIT[] = {
@@ -29,26 +28,20 @@ char DIGIT[] = {
 int d = 4;
 
 void loop() {
-  if (value > 4080) {
-    direction = -1;
-  } else if (value < 10) {
-    direction = 1;
-    d = (d + 1) % 10;
-    //Serial.println(d);
-  }
-  value += direction * 10;
-  
+  d = (d + 1) % 10;  
+  //for (int i=0; i<12; i++){
     
-  setNumber(1, d);
+  //}
+  setNumber(0, d);
+  setNumber(2, (d+1) % 10);
   
-
   Tlc.update();
-  delayMicroseconds(500);
+  delay(1000);
 }
 
 void setNumber(int position, int dig) {
   for (int i=0; i<8; i++) {
-    Tlc.set(i, ((DIGIT[dig] >> i) & 1) * value);
+    Tlc.set(position * 8 + i, (((DIGIT[dig] >> i) & 1)) * 4095);
   }
 }
 
