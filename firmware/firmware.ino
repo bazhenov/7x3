@@ -1,8 +1,38 @@
+#include <enc28j60.h>
+#include <EtherCard.h>
+#include <net.h>
+
 #include "Tlc5940.h"
+
+byte Ethernet::buffer[700];
 
 void setup() {
   Tlc.init(0);
   Serial.begin(115200);
+
+  static byte mymac[] = { 0x74,0x69,0x69,0x2D,0x30,0x31 };
+
+  Serial.println("Initializing");
+  
+  byte nFirmwareVersion = ether.begin(sizeof Ethernet::buffer, mymac, 8);
+  if(0 == nFirmwareVersion) {
+    Serial.println("Failure");
+  }
+
+  Serial.println("DHCP setup");
+  byte myip[] = { 192,168,1,40 };
+  byte gw[] = { 192,168,1,1 };
+  //ether.staticSetup(myip, gw);
+  if(!ether.dhcpSetup()) {
+    Serial.println("Failure DHCP");
+  }
+  Serial.println("DHCP got");
+  
+  ether.printIp("IP:   ", ether.myip); // output IP address to Serial
+  ether.printIp("GW:   ", ether.gwip); // output gateway address to Serial
+  ether.printIp("DHCP server: ", ether.dhcpip); // output IP address of the DHCP server
+
+  ether.udpServerListenOnPort(&udpSerialPrint, 5000);
 }
 
 /* This loop will create a Knight Rider-like effect if you have LEDs plugged
@@ -27,16 +57,33 @@ char DIGIT[] = {
 
 int d = 4;
 
+void udpSerialPrint(uint16_t dest_port, uint8_t src_ip[IP_LEN], uint16_t src_port, const char *data, uint16_t len){
+  char buffer[100];
+  sprintf (buffer, "RECV: %d bytes from %d.%d.%d.%d", len, src_ip[0], src_ip[1], src_ip[2], src_ip[3]);
+  Serial.println(buffer);
+
+  // Читаем первые две цифры
+  int v = atoi(data);
+  int a = (v / 10) % 10;
+  int b = v % 10;
+  setNumber(0, a);
+  setNumber(2, b);
+  Tlc.update();
+}
+
 void loop() {
+  ether.packetLoop(ether.packetReceive());
+  
+  /*
+  
+   
   d = (d + 1) % 10;  
-  //for (int i=0; i<12; i++){
-    
-  //}
   setNumber(0, d);
   setNumber(2, (d+1) % 10);
-  
   Tlc.update();
-  delay(1000);
+  */
+  
+  //delay(100);
 }
 
 void setNumber(int position, int dig) {
