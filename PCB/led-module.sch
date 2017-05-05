@@ -129,21 +129,21 @@ Text Label 1600 2450 0    39   ~ 0
 Text Label 1600 2550 0    39   ~ 0
 1SEG_G
 Text Label 1750 3350 1    39   ~ 0
-1SEG_A
+1SEG_E
 Text Label 1850 3350 1    39   ~ 0
-1SEG_B
+1SEG_D
 Text Label 1950 3350 1    39   ~ 0
 1SEG_C
 Text Label 2050 3350 1    39   ~ 0
-1SEG_D
-Text Label 2150 3350 1    39   ~ 0
-1SEG_E
-Text Label 2250 3350 1    39   ~ 0
-1SEG_F
-Text Label 2350 3350 1    39   ~ 0
 1SEG_G
-Text Label 2450 3250 1    39   ~ 0
+Text Label 2150 3350 1    39   ~ 0
+1SEG_F
+Text Label 2250 3350 1    39   ~ 0
 1DP
+Text Label 2350 3350 1    39   ~ 0
+1SEG_A
+Text Label 2450 3350 1    39   ~ 0
+1SEG_B
 Entry Wire Line
 	2450 3050 2550 3150
 Entry Wire Line
@@ -161,21 +161,21 @@ Entry Wire Line
 Entry Wire Line
 	3150 3050 3250 3150
 Text Label 2550 3350 1    39   ~ 0
-2SEG_A
+2SEG_E
 Text Label 2650 3350 1    39   ~ 0
-2SEG_B
+2SEG_D
 Text Label 2750 3350 1    39   ~ 0
 2SEG_C
 Text Label 2850 3350 1    39   ~ 0
-2SEG_D
-Text Label 2950 3350 1    39   ~ 0
-2SEG_E
-Text Label 3050 3350 1    39   ~ 0
-2SEG_F
-Text Label 3150 3350 1    39   ~ 0
 2SEG_G
-Text Label 3250 3250 1    39   ~ 0
+Text Label 2950 3350 1    39   ~ 0
+2SEG_F
+Text Label 3050 3350 1    39   ~ 0
 2DP
+Text Label 3150 3350 1    39   ~ 0
+2SEG_A
+Text Label 3250 3350 1    39   ~ 0
+2SEG_B
 Entry Wire Line
 	3400 1750 3500 1850
 Entry Wire Line
@@ -306,22 +306,22 @@ Text Label 5450 2450 0    39   ~ 0
 3SEG_F
 Text Label 5450 2550 0    39   ~ 0
 3SEG_G
-Text Label 5600 3400 1    39   ~ 0
-3SEG_A
-Text Label 5700 3400 1    39   ~ 0
-3SEG_B
-Text Label 5800 3400 1    39   ~ 0
-3SEG_C
-Text Label 5900 3400 1    39   ~ 0
-3SEG_D
-Text Label 6000 3400 1    39   ~ 0
+Text Label 5600 3350 1    39   ~ 0
 3SEG_E
-Text Label 6100 3400 1    39   ~ 0
-3SEG_F
-Text Label 6200 3400 1    39   ~ 0
+Text Label 5700 3350 1    39   ~ 0
+3SEG_D
+Text Label 5800 3350 1    39   ~ 0
+3SEG_C
+Text Label 5900 3350 1    39   ~ 0
 3SEG_G
-Text Label 6300 3300 1    39   ~ 0
+Text Label 6000 3350 1    39   ~ 0
+3SEG_F
+Text Label 6100 3350 1    39   ~ 0
 3DP
+Text Label 6200 3350 1    39   ~ 0
+3SEG_A
+Text Label 6300 3350 1    39   ~ 0
+3SEG_B
 Entry Wire Line
 	6300 3050 6400 3150
 Entry Wire Line
@@ -339,21 +339,21 @@ Entry Wire Line
 Entry Wire Line
 	7000 3050 7100 3150
 Text Label 6400 3350 1    39   ~ 0
-4SEG_A
+4SEG_E
 Text Label 6500 3350 1    39   ~ 0
-4SEG_B
+4SEG_D
 Text Label 6600 3350 1    39   ~ 0
 4SEG_C
 Text Label 6700 3350 1    39   ~ 0
-4SEG_D
-Text Label 6800 3350 1    39   ~ 0
-4SEG_E
-Text Label 6900 3350 1    39   ~ 0
-4SEG_F
-Text Label 7000 3350 1    39   ~ 0
 4SEG_G
-Text Label 7100 3250 1    39   ~ 0
+Text Label 6800 3350 1    39   ~ 0
+4SEG_F
+Text Label 6900 3350 1    39   ~ 0
 4DP
+Text Label 7000 3350 1    39   ~ 0
+4SEG_A
+Text Label 7100 3350 1    39   ~ 0
+4SEG_B
 Entry Wire Line
 	7250 1750 7350 1850
 Entry Wire Line
