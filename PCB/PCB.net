@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/bazhenov/Desktop/7x3/PCB/PCB.sch)
-    (date "Thursday, May 18, 2017 'PMt' 09:42:33 PM")
+    (date "Thursday, May 18, 2017 'PMt' 09:59:13 PM")
     (tool "Eeschema 4.0.6")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
