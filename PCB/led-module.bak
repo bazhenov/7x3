@@ -410,7 +410,7 @@ F 4 "Valueasd" H 6000 3300 60  0001 C CNN "Title"
 	1    6000 3300
 	1    0    0    -1  
 $EndComp
-Text HLabel 6250 3100 2    39   Input ~ 0
+Text HLabel 5750 3100 0    39   Input ~ 0
 SCLK
 Text HLabel 5750 3200 0    39   Input ~ 0
 XLAT
@@ -418,7 +418,7 @@ Text HLabel 5750 3300 0    39   Input ~ 0
 BLANK
 Text HLabel 5750 3400 0    39   Input ~ 0
 GSCLK
-Text HLabel 5750 3100 0    39   Input ~ 0
+Text HLabel 6250 3100 2    39   Input ~ 0
 SIN
 Text HLabel 5750 3500 0    39   Output ~ 0
 SOUT
